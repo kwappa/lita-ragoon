@@ -1,19 +1,7 @@
 # lita-ragoon
 
-TODO: Add a description of the plugin.
+lita-ragoon is a handler between [lita](https://github.com/litaio/lita) and [ragoon](https://github.com/kwappa/ragoona)
 
-## Installation
+## License
 
-Add lita-ragoon to your Lita instance's Gemfile:
-
-``` ruby
-gem "lita-ragoon"
-```
-
-## Configuration
-
-TODO: Describe any configuration attributes the plugin exposes.
-
-## Usage
-
-TODO: Describe the plugin's features and how to use them.
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
