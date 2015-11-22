@@ -1,0 +1,4 @@
+<% @events.each do |event| %>
+<%= event[:period] %> <%= event[:title] %> <%= event[:facility].join(',') %>
+
+<% end %>
