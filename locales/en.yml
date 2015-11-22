@@ -2,3 +2,7 @@ en:
   lita:
     handlers:
       ragoon:
+        help:
+          today:
+            syntax: ragoon today
+            desc:   show events of today (private event will be masked)
