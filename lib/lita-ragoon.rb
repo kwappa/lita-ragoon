@@ -1,12 +1,13 @@
-require "lita"
+require 'lita'
+require 'ragoon'
 
 Lita.load_locales Dir[File.expand_path(
-  File.join("..", "..", "locales", "*.yml"), __FILE__
+  File.join('..', '..', 'locales', '*.yml'), __FILE__
 )]
 
-require "lita/handlers/ragoon"
+require 'lita/handlers/ragoon'
 
 Lita::Handlers::Ragoon.template_root File.expand_path(
-  File.join("..", "..", "templates"),
+  File.join('..', '..', 'templates'),
  __FILE__
 )
