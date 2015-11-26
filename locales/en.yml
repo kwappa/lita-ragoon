@@ -6,3 +6,7 @@ en:
           today:
             syntax: ragoon today
             desc:   show events of today (private event will be masked)
+        help:
+          tomorrow:
+            syntax: ragoon tomorrow
+            desc:   show events of tomorrow (private event will be masked)
