@@ -1,4 +1,5 @@
 <% @events.each do |event| %>
-<%= event[:period] %> <%= event[:title] %> <%= event[:facility].join(',') %>
+<% plan = event[:plan].to_s != '' ? "【#{event[:plan].strip}】" : ''  %>
+<%= event[:period] %> <%= plan %> <%= event[:title] %> <%= event[:facility].join(',') %>
 
 <% end %>
