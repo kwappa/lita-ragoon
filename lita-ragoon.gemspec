@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-ragoon'
-  spec.version       = '0.2.0'
+  spec.version       = '0.2.1'
   spec.authors       = ['SHIOYA, Hiromu']
   spec.email         = ['kwappa.856@gmail.com']
   spec.description   = 'lita-ragoon is a handler beween lita and ragoon.'
