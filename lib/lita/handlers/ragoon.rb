@@ -1,6 +1,9 @@
 module Lita
   module Handlers
     class Ragoon < Handler
+      config :slack_owner_id
+      config :slack_room_id
+
       route(
         /\Aragoon.*today\Z/i, :today,
         command: true,
