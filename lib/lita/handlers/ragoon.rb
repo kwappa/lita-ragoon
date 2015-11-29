@@ -22,12 +22,12 @@ module Lita
 
       def today(request)
         events = ::Ragoon::Services::Schedule.new.schedule_get_events
-        request.reply(render_template('today', events: events))
+        request.reply(render_template('events', events: events))
       end
 
       def tomorrow(request)
         events = ::Ragoon::Services::Schedule.new.schedule_get_events(::Ragoon::Services.start_and_end(Date.today + 1))
-        request.reply(render_template('today', events: events))
+        request.reply(render_template('events', events: events))
       end
 
       Lita.register_handler(self)
