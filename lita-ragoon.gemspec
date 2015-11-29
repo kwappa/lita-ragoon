@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-ragoon'
-  spec.version       = '0.3.0'
+  spec.version       = '0.3.1'
   spec.authors       = ['SHIOYA, Hiromu']
   spec.email         = ['kwappa.856@gmail.com']
   spec.description   = 'lita-ragoon is a handler beween lita and ragoon.'
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'ragoon'
+  spec.add_dependency 'ragoon', '~> 0.2.0'
 
   spec.add_runtime_dependency 'lita', '>= 4.6'
 
