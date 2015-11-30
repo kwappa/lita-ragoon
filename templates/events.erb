@@ -1,3 +1,9 @@
+<%= "*#{@date.strftime('%m').gsub(/\A0/, '')}月#{@date.strftime('%d').gsub(/\A0/, '')}日(#{%w[日 月 火 水 木 金 土][@date.strftime('%w').to_i]})*" %>
+
+<% if @events.count > 0 %>
 <% @events.each do |event| %>
 * <%= event[:period] %> <%= event[:plan] %> <%= event[:private] ? ':lock: ' : '' %><%= event[:title] %> <%= event[:facilities] %>
+<% end %>
+<% else %>
+予定はありません。
 <% end %>
