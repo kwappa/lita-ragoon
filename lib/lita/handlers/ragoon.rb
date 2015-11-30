@@ -25,7 +25,8 @@ module Lita
         request.reply(
           render_template(
             'events',
-            events: format_events(events, request.private_message?)
+            events: format_events(events, request.private_message?),
+            date:   Date.today,
           )
         )
       end
@@ -35,7 +36,8 @@ module Lita
         request.reply(
           render_template(
             'events',
-            events: format_events(events, request.private_message?)
+            events: format_events(events, request.private_message?),
+            date:   Date.today + 1,
           )
         )
       end
